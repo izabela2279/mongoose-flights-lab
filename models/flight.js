@@ -4,9 +4,9 @@ const Schema = mongoose.Schema
 
 const flightSchema = new Schema({
   airline: String,
-  airport: {type: String, default: "DEN"},
+  airport: String,
   flightNo: Number,
-  departs: {type: Date, default: 2024},
+  departs: Number,
 }, {
   timestamps: true
 })
