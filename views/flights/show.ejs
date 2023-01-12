@@ -18,7 +18,11 @@
     <div><%= flight.flightNo %></div>
     <div>Departure: </div>
     <div><%= flight.departs %></div>
+    <%# start meal list %>
+
+	  <%# end meal list %>
   </section>
+  <%# add to meal form below this comment %>
 
   <h2>Tickets</h2>
   <% if (flight.tickets.length) { %>
@@ -51,13 +55,6 @@
     <input type="number" name="price" id="price-input"></input>
     <label for="seat-select">Seat:</label>
     <input name="seat" required pattern="[A-F][1-9]\d?" id="price-input"></input>
-    <!-- <select name="seat" id="seat-select">
-      <option value="A">A</option>
-      <option value="B">B</option>
-      <option value="C">C</option>
-      <option value="D">D</option>
-      <option value="E">E</option>
-      <option value="F" selected>F</option> -->
     </select>
     <button type="submit">Add Ticket</button>
   </form>
